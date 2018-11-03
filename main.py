@@ -144,13 +144,13 @@ if render == 1:
                     z[y+i2][x+i] = cz
     print('rendered')
     print("saving..")
-    with open("parsedData.pickle", "wb") as f:
+    with open("renderedData.pickle", "wb") as f:
         pickle.dump(z, f)
         f.close()
     print("saved")
 else:
     print('loading..')
-    with open("parsedData.pickle", "rb") as f:
+    with open("renderedData.pickle", "rb") as f:
         z = pickle.load(f)
         f.close()
     print('loaded')
